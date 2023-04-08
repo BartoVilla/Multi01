@@ -6,22 +6,23 @@ html {
 main{
     width: 100%;
     height: 100%;
-    background-color: #F8F7F3;
+    background-color: #fff;
 }
 
-
+body {
+    margin: 0;
+    padding: 0;
+}
 
 header {
     background-color: #0A3E27;
     width: 100%;
     display: table;
-    content: "";
-    clear: both;
 }
 
 .logotipo {
-    width: 300px;
-    height: 20px;
+    width: 200px;
+    height: 70px;
     padding: 20px;
     float: left;
 }
@@ -37,6 +38,7 @@ header {
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     grid-template-rows: 50px;
     column-gap: -100px;
+    text-align: center;
 }
 
 .menu ul li {
@@ -78,7 +80,7 @@ header {
 .intro p {
     font-size: 20px;
     margin-top: 20px; 
-    padding: 10px; 
+    padding: 25px; 
     border: 2px; 
     border-radius: 10px; 
     max-width: 500px; 
@@ -142,6 +144,52 @@ header {
     font-size: 20px;
     line-height: 20px;
 }
+
+#nosotros {
+    position: relative;
+    overflow: visible;
+    height: 250px;
+}
+
+#caja-superpuesta {
+    position: absolute;
+    top: -80px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 1114px;
+    height: 270px;
+    background-color:#F8F7F3;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 50px;
+}
+
+#caja-superpuesta div {
+    padding: 10px;
+    height: 100%;
+    box-sizing: border-box;
+    overflow: auto;
+}
+
+#caja-superpuesta h2 {
+    text-align: center;
+    font-size: 36px;
+    margin: 20px 0;
+    font-family: 'Montserrat', sans-serif, bold;
+    color:#0A3E27;
+}
+
+#caja-superpuesta p {
+    font-size: 20px;
+    line-height: 24px;
+    margin:15px 20px 0px 20px;
+    text-align: justify;
+    
+}
+
+.re-beneficios{
+    color:#0A3E27;
+}
+  
 
 /*FORMULARIO*/
 
