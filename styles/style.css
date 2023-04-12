@@ -13,47 +13,42 @@ body {
     padding: 0;
 }
 
-
 /*MENÚ*/
 
 header {
     background-color: #0A3E27;
     width: 100%;
-    display: table;
+    display: grid;
+    grid-template-columns: 0.5fr 2fr;
 }
 
 .logotipo {
     width: 200px;
     height: 70px;
     padding: 20px;
-    float: left;
 }
 
-.menu {
-    display: grid;
-    width: 900px;
-    margin: 0 auto;
+#menu {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
 }
 
-.menu ul {
+#menu ul {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-    grid-template-rows: 50px;
-    column-gap: -100px;
     text-align: center;
 }
 
-.menu ul li {
+#menu ul li {
     list-style: none;
 }
 
-.menu ul li a {
+#menu ul li a {
     text-decoration: none;
     font-size: 18px;
-    font-family: 'Montserrat', sans-serif;
     color: #fff;
 }
-
 
 /*BANNER*/
 
@@ -72,20 +67,16 @@ header {
 .intro h2 {
     display: flex;
     flex-direction: column;
-    font-size: 3rem;
+    font-size: 70px;
     font-weight: 400;
-    font-family: 'Montserrat', sans-serif;
     color: #0A3E27;
-}
-
-.extrabold {
-    font-weight: 800;
+    margin: 10px;
 }
 
 .intro p {
-    font-size: 20px;
-    margin-top: 20px; 
-    padding: 25px; 
+    font-size: 24px;
+    margin-top: 10px; 
+    padding: 20px; 
     border: 2px; 
     border-radius: 10px; 
     max-width: 500px; 
@@ -98,10 +89,11 @@ header {
     color: #CB6E5C; 
     text-decoration: none;
     padding: 10px;
-    border-radius: 50px;
+    border-radius: 30px;
     border: 2px solid #CB6E5C;
     cursor: pointer;
     outline: none;
+    margin-left: 20px;
 }
 
 .intro-button:hover {
@@ -116,6 +108,12 @@ header {
 .intro-button a{
     text-decoration: none;
     color: #CB6E5C;
+}
+
+.intro img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 /* POPUP */
@@ -158,95 +156,88 @@ header {
     height: 250px;
 }
 
-#overlapping-box {
+.overlapping-box {
     position: absolute;
     top: -80px;
     left: 50%;
     transform: translateX(-50%);
-    width: 1114px;
-    height: 270px;
+    width: 1000px;
+    height: 400px;
     background-color:#F8F7F3;
     box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
     border-radius: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-#overlapping-box div {
-    padding: px;
-    height: 100%;
-    box-sizing: border-box;
-    overflow: auto;
+.overlapping-box div {
+    padding: 60px;
 }
 
-#overlapping-box h2 {
+.overlapping-box h2 {
     text-align: center;
     font-size: 36px;
-    margin: 20px 0;
-    font-family: 'Montserrat', sans-serif, bold;
     color:#0A3E27;
+    margin-top: -8px;
 }
 
-#overlapping-box p {
+.overlapping-box p {
     font-size: 20px;
     line-height: 24px;
     margin:15px 20px 0px 20px;
     text-align: justify;
-    
 }
 
 /*RE-BENEFICIOS*/
 
 #benefits {
-    background-color:#0A3E27;
+    padding: 100px;
+    background-color: #0A3E27;
     color: #fff;
-    padding: 50px;
 }
-  
-  
-#benefits h2 {
-    text-align: center;
-    font-size: 36px;
-    margin-bottom: 30px;
-    color: #fff;
+
+.benefits-container {
     display: flex;
     flex-direction: column;
-    font-size: 3rem;
-    font-weight: 400;
-    font-family: 'Montserrat', sans-serif;
+    align-items: center;
+    justify-content: center;
 }
-  
- 
-#benefits > div {
-    max-width: 1000px;
-    margin: 0 auto;
-}
-  
-#benefits > div > div {
+
+.benefit-item {
+    width: 40%;
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-}
-  
-#benefits > div > div > div {
-    width: calc(33.33% - 10px);
-    margin-bottom: 30px;
-}
-  
-#benefits > div > div > div > h3 {
-    font-size: 1.5rem;
-    margin-bottom: 10px;
-}
-  
-#benefits > div > div > div > p {
-    font-size: 1rem;
-    line-height: 1.5;
+    flex-direction: column;
+    align-items: flex-start;
     margin-bottom: 20px;
+    background-color: #FFF;
+    color: #0A3E27;
+    border-radius: 100px;
+    padding: 10px 60px;
 }
-  
-#benefits > div > div > div > img {
-    margin-top: 10px;
+
+.benefit-left {
+    align-items: flex-start;
+    margin-right: auto;
+}
+
+.benefit-right {
+    align-items: flex-end;
+    margin-left: auto;
+}
+
+#benefits h2 {
+    font-size: 40px;
+    font-weight: bold;
 }
 
 /*NUESTRA COLECCIÓN*/
+
+#colection {
+    background-color: #F9F9F9;
+    padding: 50px 0;
+    text-align: center;
+}
 
 #colection h2{
     text-align: center;
@@ -257,94 +248,196 @@ header {
     flex-direction: column;
     font-size: 3rem;
     font-weight: 400;
-    font-family: 'Montserrat', sans-serif;
+}
+
+#colection .carousel {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 400px;
+    width: 60%;
+    margin: 0 auto;
+}
+
+.carousel-item {
+    width: 700px;
+    height: 600px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 45%;
+    transform: scale(0.65);
+    transition: transform 0.5s ease;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    margin-left: -200px;
+    filter: grayscale(100%);
+    z-index: 1;
+}
+
+.carousel-item:first-child {
+    margin-left: 0; 
+}
+
+.carousel-item button {
+    background-color: #0A3E27;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 25px;
+    font-size: 18px;
+    padding: 10px 20px;
+    margin-bottom: 30px;
+    cursor: pointer;
+}
+
+.carousel-item:nth-of-type(1) {
+    z-index: 3;
+}
+
+.carousel-item:nth-of-type(2) {
+    filter: grayscale(0%);
+    z-index: 3;
+}
+
+.carousel-item:nth-of-type(3) {
+    z-index: 1;
+}
+
+.carousel-item:hover {
+    transform: scale(0.7);
+    filter: grayscale(0%);
+    z-index: 4;
 }
 
 /*NEWSLETTER*/
 
-#newsletter h1{
-    font-size: 25px;
-    font-family: "montserrat";
-    text-align: center;
-    color: #000;
+#newsletter {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: 46% 54%;
+    width: 100%;
+    height: 300px;
+    color: #CB6E5C;
 }
 
-#newsletter h2{
-    font-size: 16px;
-    font-family: "montserrat";
+#newsletter div:nth-child(1) {
+    padding: 30px 50px ;
+}
+  
+#newsletter h4 {
+    font-size: 30px;
     text-align: center;
-    color: #000;
+    margin: 0;
+    margin-bottom: 15px;
+}
+
+#newsletter div:nth-child(1) form {
+    display: grid;
+    grid-template-columns: 2fr 0.5fr;
+}
+  
+#newsletter div:nth-child(1) form input[type="email"] {
+    color: #CB6E5C;
+    border-radius: 25px;
+    padding: 10px;
+    font-size: 16px;
+    border: 2px solid #CB6E5C;
+    margin-right: 10px;
+}
+
+#newsletter div:nth-child(1) form input[type="submit"] {
+    background-color: #CB6E5C;
+    color: white;
+    font-size: 16px;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 25px;
+    cursor: pointer;
+}
+
+#newsletter div:nth-child(2) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image:  linear-gradient(rgba(10, 62, 39, 0.3), rgba(10, 62, 39, 0.3)), url(./../img/ImgCamisas.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 160px;
+    border-radius: 0 76px 76px 95px;
+    margin-right:80px;
+}
+
+#newsletter div:nth-child(2) img{
+    height: 50%;
 }
 
 /* FOOTER */
 
-footer {
+footer{
     background-color: #0A3E27;
     padding: 40px 0;
     color: #fff;
     font-size: 14px;
 }
-  
-footer > div {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    max-width: 1200px;
-    margin: 0 auto;
+
+#contactanos {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
 }
-  
-footer > div > div {
-    margin-right: 40px;
-    margin-bottom: 40px;
+
+#contactanos .extrainfo{
+    display: grid;
+    grid-template-rows: 1fr 1fr;
 }
-  
-footer img {
-    margin-bottom: 20px;
+
+#contactanos .extrainfo div:nth-child(1) {
+    display: inline-block;
 }
-  
-footer p {
+
+#contactanos .submenus{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+#contactanos p {
     margin-bottom: 20px;
     line-height: 1.5;
 }
   
-footer a {
+#contactanos a {
     color: #fff;
     margin-right: 20px;
     font-size: 20px;
 }
   
-footer h4 {
+#contactanos h4 {
     font-size: 16px;
     margin-bottom: 20px;
     text-transform: uppercase;
     letter-spacing: 1px;
+    color:#CB6E5C; 
 }
   
-footer ul {
+#contactanos ul {
     list-style: none;
     padding-left: 0;
     margin-bottom: 20px;
 }
   
-footer ul li {
+#contactanos ul li {
     margin-bottom: 10px;
 }
   
-footer hr {
+#contactanos hr {
     border: none;
     border-top: 1px solid #D9D9D9;
     margin: 40px 0;
 }
   
-footer .derechosdeautor {
+#contactanos .derechosdeautor {
     font-size: 12px;
     text-align: center;
     margin-top: 40px;
-}
-  
-@media (max-width: 768px) {
-    footer > div > div {
-      margin-right: 0;
-      width: 50%;
-    }
 }
