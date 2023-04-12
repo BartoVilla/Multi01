@@ -10,8 +10,8 @@
 </head>
 <body>
 	<header>
-		<img class="logotipo" src="./img/RecirculaLogo_Verde.jpg" alt="Logotipo de Recirculá">
-		<nav class="menu">
+		<img class="logotipo" src="./img/LogoBlanco.jpg" alt="Logotipo de Recirculá">
+		<nav id="menu">
 		  <ul>
 			<li><a href="#nosotros">NOSOTROS</a></li>
 			<li><a href="#re-beneficios">RE-BENEFICIOS</a></li>
@@ -24,9 +24,10 @@
 	<main>
 		<section class="intro">
 			<div>
-				<h2>El futuro es <span>CIRCULAR</span></h2>
+				<h2>El futuro es <b>CIRCULAR</b></h2>
 				<p>Circulando tu placard, ayudás a que el mundo sea un lugar más sostenible ¿Te animás al cambio?</p>
 				<button class="intro-button"><a href="#popup">SUMATE AL CAMBIO</a></button>
+				<img src="./img/FlechaBanner">
 			</div>
 			
 			<div id="popup" class="popup">
@@ -46,108 +47,105 @@
 				</div>
 			</div>
 		</section>
-		
-			<img class="flecha" src="./img/Recurso 4flecha.jpg" alt="flecha">
-
-		<section class="us">
+		<section id="us">
 			<div class="overlapping-box">
-				<h2>SOBRE RECIRCULÁ</h2>
+				<div>
+					<h2>SOBRE RECIRCULÁ</h2>
 					<p>Somos una empresa comprometida con el medio ambiente y la moda sostenible. Nos enorgullece ofrecer una alternativa innovadora a la forma tradicional de adquirir ropa nueva, fomentando un consumo más responsable y consciente.
-					<br> Nuestro modelo de negocio se basa en la circulación de ropa. Significa que ofrecemos prendas que ya han sido usadas, pero que están en excelente estado y pueden tener una segunda vida. Nos encargamos de seleccionar cuidadosamente cada prenda, asegurando su calidad y limpieza. </p>			
+						Nuestro modelo de negocio se basa en la circulación de ropa. Significa que ofrecemos prendas que ya han sido usadas, pero que están en excelente estado y pueden tener una segunda vida. Nos encargamos de seleccionar cuidadosamente cada prenda, asegurando su calidad y limpieza. </p>
+				</div>
 			</div>
 		</section>
-		
-		<section class="benefits">
-			<div>
-				<h2>USÁ LOS <span class="extrabold">RE-BENEFICIOS</span></h2>
-					<div class="beneficio1">
-						<h3>Ahorro de dinero</h3>
-						<img style="width: 5%;" src="./img/Icono1.svg" alt="Ahorro de dinero">
-						<p>La recirculación de ropa es más económica <br>
-							que comprar ropa nueva, por lo que las <br>
-							personas pueden ahorrar dinero.</p>
-					</div>
-					
-					<div class="beneficio2">
-						<h3>Reducción de CO2</h3>
-						<p>La recirculación ayuda a reducir las emisiones de GEI al prolongando la vida útil de las prendas y reduciendo la necesidad de producir nueva ropa.</p>
-						<img style="width: 5%;" src="./img/Icono2.svg" alt="Reducción de CO2">
-					</div>
-					
-					<div class="beneficio3">
-						<h3>Economía circular</h3>
-						<p>Ayuda a reducir el impacto ambiental de la producción de bienes y fomenta un modelo de negocio más sostenible.</p>
-						<img style="width: 5%;" src="./img/Icono3.svg" alt="Economía circular">
-					</div>
+		<section id="benefits">
+			<h2>USÁ LOS <b>RE-BENEFICIOS</b></h2>
+			<div class="benefits-container">
+				<div class="benefit-item benefit-left">
+					<h3>Ahorro de dinero</h3>
+					<p>La recirculación de ropa es más económica que comprar ropa nueva, por lo que las personas pueden ahorrar dinero.</p>
+					<img style="width: 5%;" src="./img/IconoAhorro.jpg" alt="Ahorro de dinero">
+				</div>
+				<div class="benefit-item benefit-right">
+					<h3>Reducción de CO2</h3>
+					<p>La recirculación ayuda a reducir las emisiones de GEI al prolongando la vida útil de las prendas y reduciendo la necesidad de producir nueva ropa.</p>
+					<img style="width: 5%;" src="./img/IconoCO2.jpg" alt="Reducción de CO2">
+				</div>
+				<div class="benefit-item benefit-left">
+					<h3>Economía circular</h3>
+					<p>Ayuda a reducir el impacto ambiental de la producción de bienes y fomenta un modelo de negocio más sostenible.</p>
+					<img style="width: 5%;" src="./img/IconoEconomCircular.jpg" alt="Economía circular">
 				</div>
 		</section>
-				
-		<section>
-			<div class="colection">
-				<h2>NUESTRA <span class="extrabold">COLECCIÓN</span></h2>
-			</div>
-			
-			<div>
-				<h4>Mujer</h4>
-				<img src="./img/FotoMujer.jpg" alt="Imagen de Mujer">
-				<h4>Hombre</h4>
-				<img src="./img/FotoHombre.jpg" alt="Imagen de Hombre">
-				<h4>Calzados</h4>
-				<img src="./img/FotoZapas.jpg" alt="Imagen de Calzados">
+		<section id="colection">
+			<h2>NUESTRA <b>COLECCIÓN</b></h2>
+			<div class="carousel">
+				<div class="carousel-item" style="background-image: url('./img/FotoHombre.jpg');">
+					<button><b>HOMBRE →</b></button>
+				</div>
+				<div class="carousel-item" style="background-image: url('./img/FotoMujer.jpg');">
+					<button><b>MUJER →</b></button>
+				</div>
+				<div class="carousel-item" style="background-image: url('./img/FotoZapas.jpg');">
+					<button><b>CALZADOS →</b</button>
+				</div>
 			</div>
 		</section>
 		
 		<section class="newsletter">
 				<h4>Suscribite a nuestro Newsletter</h4>
-			
-			<form>
-				<input type="email" class="email" name="email" required placeholder="Correo Electrónico">
-				<input type="submit" class="boton"value="REGISTRARME">
-			</form>
-				
-			<img src="./img/RecirculaLogo_Verde.jpg" alt="Logo de Recirculá">
+				<form>
+					<input type="email" name="email" placeholder="Correo Electrónico" required>
+					<input type="submit" value="REGISTRARME">
+				</form>
+			</div>
+			<div>
+				<img src="./img/Recurso 1logo verde.png" alt="Logo de Recirculá">
+			</div>
 		</section>
 	
 	</main>
 
 	<footer>
-		<div class="contactanos">
-			<img class="logotipo" src="./img/RecirculaLogo_Verde.jpg" alt="Logo">
-					<img src="" alt="logo de instagram"> <a href="#"><i class="fab fa-instagram"></i></a>
-					<img src="" alt="logo de twitter"> <a href="#"><i class="fab fa-twitter"></i></a>
-					<img src="" alt="logo de facebook"> <a href="#"><i class="fab fa-facebook-f"></i></a>
-			
-				<h6>Dirección</h6>
+		<div id="contactanos">
+			<div class="extrainfo">
+				<div style="display: flex; flex-direction: column;">
+					<img src="./img/Recurso 1logo blanco.png" alt="Logo">
+					<div>
+						<a href="#"><i class="fab fa-instagram"></i></a>
+						<a href="#"><i class="fab fa-twitter"></i></a>
+						<a href="#"><i class="fab fa-facebook-f"></i></a>
+					</div>
+					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.2028008001435!2d-58.4051090843354!3d-34.599032980460706!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcca93d381a6cd%3A0x98941c9b0f7b9ea7!2sAv.%20C%C3%B3rdoba%202530%2C%20C1117%20CABA!5e0!3m2!1ses!2sar!4v1680396060033!5m2!1ses!2sar" width="350" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+				</div>
+				<div>
+					<h6>Dirección</h6>
 					<p>Avenida Córdoba 2530, CABA, Buenos Aires</p>
-				<h6>Teléfono</h6>
-					<p>11 4025-8475</p>
-			
-				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.2028008001435!2d-58.4051090843354!3d-34.599032980460706!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcca93d381a6cd%3A0x98941c9b0f7b9ea7!2sAv.%20C%C3%B3rdoba%202530%2C%20C1117%20CABA!5e0!3m2!1ses!2sar!4v1680396060033!5m2!1ses!2sar" width="1200" height="600" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-		</div>
-		
-		<div class="menu">
-			<div class="nosotros">
-				<h4>Nosotros</h4>
-				<ul>
-					<li><a href="">Sobre Recirculá</a></li>
-					<li><a href="">Contacto</a></li>
-					<li><a href="">Locales</a></li>
-					<li><a href="">Como recircular</a></li>
-				</ul>
+					<h6>Teléfono</h6>
+					<p>11-4025-8475</p>
+				</div>
 			</div>
-			
-			<div class="consulta">
-				<h4>Consultá</h4>
-				<ul>
-					<li><a href="">Consultá</a></li>
-					<li><a href="">Preguntas Frecuentes</a></li>
-					<li><a href="">Envíos y Retiros</a></li>
-					<li><a href="">Cambios y Devoluciones</a></li>
-					<li><a href="">Términos y Condiciones</a></li>
-				</ul>
+			<div class="submenus">
+				<div>
+					<h4>Nosotros</h4>
+					<ul>
+						<li><a href="">Sobre Recirculá</a></li>
+						<li><a href="">Contacto</a></li>
+						<li><a href="">Locales</a></li>
+						<li><a href="">Como recircular</a></li>
+					</ul>
+				</div>
+				<div>
+					<h4>Consultá</h4>
+					<ul>
+						<li><a href="">Consultá</a></li>
+						<li><a href="">Preguntas Frecuentes</a></li>
+						<li><a href="">Envíos y Retiros</a></li>
+						<li><a href="">Cambios y Devoluciones</a></li>
+						<li><a href="">Términos y Condiciones</a></li>
+					</ul>
+				</div>
 			</div>
 		</div>
-		
+		<hr>	
 		<p class="derechosdeautor">©2023 Recirculá. Todos los derechos reservados</p>
 	
 	</footer>
