@@ -10,13 +10,13 @@
 </head>
 <body>
 	<header>
-		<img class="logotipo" src="./img/LogoBlanco.jpg" alt="Logotipo de Recirculá">
+		<img class="logotipo" src="./img/LogoBlanco.png" alt="Logotipo de Recirculá">
 		<nav id="menu">
 		  <ul>
-			<li><a href="#nosotros">NOSOTROS</a></li>
-			<li><a href="#re-beneficios">RE-BENEFICIOS</a></li>
-			<li><a href="#coleccion">COLECCIÓN</a></li>
-			<li><a href="#contactanos">CONTACTANOS</a></li>
+			<li><a href="#us">NOSOTROS</a></li>
+			<li><a href="#benefits">RE-BENEFICIOS</a></li>
+			<li><a href="#colection">COLECCIÓN</a></li>
+			<li><a href="#contact">CONTACTANOS</a></li>
 		  </ul>
 		</nav>
 	</header>
@@ -27,23 +27,29 @@
 				<h2>El futuro es <b>CIRCULAR</b></h2>
 				<p>Circulando tu placard, ayudás a que el mundo sea un lugar más sostenible ¿Te animás al cambio?</p>
 				<button class="intro-button"><a href="#popup">SUMATE AL CAMBIO</a></button>
-				<img src="./img/FlechaBanner">
+				<img class= "arrow-banner" src="./img/FlechaBanner.png">
 			</div>
 			
 			<div id="popup" class="popup">
 				<a href="#" class="popup-close">&times;</a>
 				<div>
-					<h3>Sumate a <b>Recirculá</b></h3>
+					<h3>Sumate a <b> Recirculá</b></h3>
 					<p>Y descubrí todos los artículos originales de las mejores marcas extranjeras</p>
-					<form>
-						<input type="text" name="name" placeholder="Nombre y Apellido" required>
-						<input type="email" name="email" placeholder="Correo Electrónico" required>
-						<input type="text" name="city" placeholder="Ciudad" required>
+					<form class="form">
+						<div>
+							<input type="text" name="name" placeholder="Nombre y Apellido" required>
+						</div>
+						<div>
+							<input type="email" name="email" placeholder="Correo Electrónico" required>
+						</div>
+						<div>
+							<input type="text" name="city" placeholder="Ciudad" required>
+						</div>
 						<input type="submit" value="SUMARME">
 					</form>
 				</div>
 				<div>
-					<img style="width: 50%;" src="./img/FotoPopUp.jpg" alt="Imagen del popup">
+					<img class= "imgbanner" style="width: 50%;" src="./img/FotoPopUp.jpg" alt="Imagen del popup">
 				</div>
 			</div>
 		</section>
@@ -57,26 +63,28 @@
 			</div>
 		</section>
 		<section id="benefits">
+			<img src="/img/FlechaBeneficios.png">
 			<h2>USÁ LOS <b>RE-BENEFICIOS</b></h2>
 			<div class="benefits-container">
 				<div class="benefit-item benefit-left">
 					<h3>Ahorro de dinero</h3>
 					<p>La recirculación de ropa es más económica que comprar ropa nueva, por lo que las personas pueden ahorrar dinero.</p>
-					<img style="width: 5%;" src="./img/IconoAhorro.jpg" alt="Ahorro de dinero">
+					<img class="benefits-icons" style="width: 10%;" src="./img/RebeneficiosAhorro.png" alt="Ahorro de dinero">
 				</div>
 				<div class="benefit-item benefit-right">
 					<h3>Reducción de CO2</h3>
 					<p>La recirculación ayuda a reducir las emisiones de GEI al prolongando la vida útil de las prendas y reduciendo la necesidad de producir nueva ropa.</p>
-					<img style="width: 5%;" src="./img/IconoCO2.jpg" alt="Reducción de CO2">
+					<img class="benefits-icons" style="width: 10%;" src="./img/RebeneficiosCO2.png" alt="Reducción de CO2">
 				</div>
 				<div class="benefit-item benefit-left">
 					<h3>Economía circular</h3>
 					<p>Ayuda a reducir el impacto ambiental de la producción de bienes y fomenta un modelo de negocio más sostenible.</p>
-					<img style="width: 5%;" src="./img/IconoEconomCircular.jpg" alt="Economía circular">
+					<img class="benefits-icons" style="width: 10%;" src="./img/Rebeneficios3.png" alt="Economía circular">
 				</div>
 			</div>
 		</section>
 		<section id="colection">
+			<img src="/img/FlechaColeccion.png">
 			<h2>NUESTRA <b>COLECCIÓN</b></h2>
 			<div class="carousel">
 				<div class="carousel-item" style="background-image: url('./img/FotoHombre.jpg');">
@@ -99,16 +107,16 @@
 				</form>
 			</div>
 			<div>
-				<img src="./img/Recurso 1logo verde.png" alt="Logo de Recirculá">
+				<img src="./img/LogoBlanco.png" alt="Logo de Recirculá">
 			</div>
 		</section>
 	</main>
 
 	<footer>
-		<div id="contactanos">
-			<div class="extrainfo">
+		<div id="contact">
+			<div class="extra-info">
 				<div style="display: flex; flex-direction: column;">
-					<img src="./img/Recurso 1logo blanco.png" alt="Logo">
+					<img class="logotipo" src="./img/LogoBlanco.png" alt="Logo">
 					<div>
 						<a href="#"><i class="fab fa-instagram"></i></a>
 						<a href="#"><i class="fab fa-twitter"></i></a>
