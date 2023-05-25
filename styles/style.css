@@ -75,11 +75,11 @@ header {
 
 .intro p {
     font-size: 24px;
-    margin: 0;
-    padding: 0; 
+    margin: 10px;
+    padding: 10px; 
     border: 2px; 
     border-radius: 10px; 
-    max-width: 500px; 
+    max-width: 5000px; 
     text-align: center; 
     text-align: left;
     color: #0A3E27;
@@ -110,6 +110,7 @@ header {
 .intro-button a{
     text-decoration: none;
     color: #CB6E5C;
+    font-size: 20px;
 }
 
 .intro img{
@@ -622,14 +623,112 @@ footer{
 
 /* SHOP */
 
-.item-image {
+.sidenav {
+    height: 300px;
+    width: 200px;
+    position: absolute;
+    z-index: 1;
+    top: 200px;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+.sidenav a {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 20px;
+    color: #818181;
+    display: block;
+}
+
+.sidenav a:hover {
+    color: #f1f1f1;
+}
+
+.dropdown-btn {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 20px;
+    color: #818181;
+    display: block;
+    border: none;
+    background: none;
+    width: 100%;
+    text-align: left;
+    cursor: pointer;
+}
+
+.dropdown-container {
+    display: none;
+    background-color: #262626;
+    padding-left: 8px;
+}
+
+.fa-caret-down {
+    float: right;
+    padding-right: 8px;
+}
+
+.main {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 80%;
+    max-width: 1200px;
+  }
+  
+  .intro-shop {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    background-color: #fff;
+    padding: 20px;
+    width: 20%;
+    height: 80vh;
+    box-sizing: border-box;
+    overflow-y: auto;
+    border-radius: 10px;
+    box-shadow: 0px 10px 20px rgba(0,0,0,0.1);
+  }
+  
+  .product-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
-}  
+    grid-gap: 20px;
+    justify-items: center;
+    align-items: start;
+    width: 70%;
+    padding: 20px;
+    box-sizing: border-box;
+  }
+  
+  .more-button-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 70%;
+    padding: 20px;
+    box-sizing: border-box;
+  }
+  
+  .more-button {
+    padding: 10px 20px;
+    font-size: 18px;
+    color: #fff;
+    background-color: #111;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .more-button:hover {
+    background-color: #333;
+  }
 
-.item-image div a img {
-    border-top-left-radius: 20px;
-    border-bottom-right-radius: 20px;
-    width: 500px;
-}  
+.item-image{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
