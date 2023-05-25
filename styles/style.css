@@ -619,3 +619,17 @@ footer{
 #contact p { 
     font-size:12px;
 }
+
+/* SHOP */
+
+.item-image {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}  
+
+.item-image div a img {
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    width: 500px;
+}  
