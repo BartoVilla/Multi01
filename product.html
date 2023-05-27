@@ -15,225 +15,280 @@
 </head>
 
 <body>
-    <header>
-        <nav id="info">
-            <ul>
-                <li>Envío gratis a partir de $12.000 - Hasta 3 cuotas sin interés</li>
-            </ul>
-        </nav>
+	<header>
+		<nav id="menu"></nav>
+            <div class="logotipo-navegacion">
+              <img src="./img/LogoRosa.png" alt="Logotipo de Recirculá">
+            </div>
+		    <div class="items-centrales">
+                <ul>
+		    	    <li><a href="#us">SHOP</a></li>
+		    	    <li><a href="#benefits">RE-CLUB</a></li>
+                    <li><a href="#colection">NOSOTROS</a></li>
+                </ul>
+            </div>
 
-        <img class="logotipo" src="./img/LogoBlanco.png" alt="Logotipo de Recirculá">
-        <nav id="menu">
-            <ul>
-                <li><a href="#us">NOSOTROS</a></li>
-                <li><a href="#benefits">RE-BENEFICIOS</a></li>
-                <li>
-                    <a href="#colection"><span>SHOP</span> <span class="fa fa-angle-right toggle-right"></span></a>
-                    <ul>
-                        <li class="child-menu">
-                            <ul class="child-menu-ul">
-                                <li>
-                                    <a href="#">Mujer</a>
-                                </li>
-                                <li>
-                                    <a href="#">Hombre</a>
-                                </li>
-                            </ul>
-                        </li>
-                    </ul>
-                </li>
-                <li><a href="#contact">CONTACTANOS</a></li>
-                <li><a href="#cart"><img class="cart" src="#" alt="Carrito"></a></li>
-            </ul>
-        </nav>
-    </header>
+            <div class="items-usuario">
+              <div class="perfil">
+                  <a href="#perfil"> <img src="./img/user-outline.svg" alt="usuario"></a>
+              </div>
+
+              <div class="carrito">
+                  <a href="#carrito"> <img src="./img/user-relleno.svg" alt="carrito"></a> 
+              </div>
+            </div>
+		</nav>
+	</header>
 
     <main>
-        <div class="breadcrumb" role="navigation" aria-label="Breadcrumbs">
-            <div class="_cont">
-                <ol>
-                    <li><a title="Back to the frontpage">Home</a></li>
-                    <li><a title="">Mujer</a></li>
-                    <li>Buzo Marant Black</li>
-                </ol>
+        <section class="producto-general">
+            <div class="imagenes-producto">
+                <div class="image-preview">
+                    <img class="preview" src="https://via.placeholder.com/150">
+                    <img class="preview" src="https://via.placeholder.com/150">
+                    <img class="preview" src="https://via.placeholder.com/150">
+                </div>
+                <div class="main-image">
+                    <img class="imagen-producto" src="https://via.placeholder.com/380X500">
+                </div>
             </div>
-        </div>
 
-        <section aria-label="Main content" role="main" class="product-detail">
-            <div itemscope itemtype="#">
-                <meta itemprop="url" content="#">
-                <meta itemprop="image" content="/#">
-                <div class="shadow">
-                    <div class="_cont detail-top">
-                        <div class="cols">
-                            <div class="left-col">
-                                <div class="thumbs">
-                                    <a class="thumb-image active" href="#" data-index="0">
-                                        <span><img src="#" alt="Buzo Marant Black"></span>
-                                    </a>
-                                    <a class="thumb-image" href="#" data-index="1">
-                                        <span><img src="#" alt="Buzo Marant Black"></span>
-                                    </a>
-                                    <a class="thumb-image" href="#" data-index="2">
-                                        <span><img src="#" alt="Buzo Marant Black"></span>
-                                    </a>
-                                    <a class="thumb-image" href="#" data-index="3">
-                                        <span><img src="#" alt="Buzo Marant Black"></span>
-                                    </a>
-                                </div>
-                                <div class="big">
-                                    <span id="big-image" class="img" quickbeam="image" style="background-image: url('#')" data-src="/#"></span>
-                                    <div id="banner-gallery" class="swipe">
-                                        <div class="swipe-wrap">
-                                            <div style="background-image: url('#')"></div>
-                                            <div style="background-image: url('#')"></div>
-                                            <div style="background-image: url('#')"></div>
-                                            <div style="background-image: url('#')"></div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="right-col">
-                                <h1 itemprop="name">Buzo Marant Black</h1>
-                                <div itemprop="offers" itemscope itemtype="#">
-                                    <meta itemprop="priceCurrency" content="$">
-                                    <link itemprop="availability" href="#">
-                                    <div class="price-shipping">
-                                        <div class="price" id="price-preview" quickbeam="price" quickbeam-price="13.250,00">
-                                            $ 13.250,00
-                                        </div>
-                                    </div>
-                                    <div class="swatches">
-                                        <div class="swatch clearfix" data-option-index="0">
-                                            <select class="form-select js-sort-by font-weight-bold " aria-label="Seleccionar talle">
-                                                <option value="price-ascending">Seleccionar talle</option>
-                                                <option>Seleccionar talle</option>
-                                                <option>XS</option>
-                                                <option>S</option>
-                                                <option>M</option>
-                                                <option>L</option>
-                                                <option>XL</option>
-                                                <option>XXL</option>
-                                            </select>
-                                        </div>
-                                        <div class="guide">
-                                            <a>Size guide</a>
-                                        </div>
-                                    </div>
-                                    <div class="btn-and-quantity-wrap">
-                                        <div class="btn-and-quantity">
-                                            <div class="spinner">
-                                                <span class="btn minus" data-id="2721888517"></span>
-                                                <input type="text" id="updates_2721888517" name="quantity" value="1" class="quantity-selector">
-                                                <input type="hidden" id="product_id" name="product_id" value="2721888517">
-                                                <span class="btn plus" data-id="2721888517"></span>
-                                            </div>
-                                            <div id="AddToCart" quickbeam="add-to-cart">
-                                                <span id="AddToCartText">Agregar al carrito</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+            <div class="info-producto">
+                <div>
+                    <div class="flex">
+                        <h1 style="font-weight: 500; font-size: 1.2em; margin: 0;">Buzo Marant Black</h1>
+                        <i style="display: flex; justify-content: center; align-items: center; padding-left: 8px;" class="far fa-heart"></i>
+                    </div>
+                    <p style="font-weight: bold; font-size: 1.4em;">$13.250</p>
+                </div>
+                <div class="sidenav" style="margin: 20px 0;">
+                    <div style="border-bottom: 0.5px solid #ccc;" >
+                      <button class="dropdown-btn">
+                        <i class="fas fa-chevron-down"></i>
+                        Talle
+                      </button>
+                      <div class="dropdown-container">
+                        <a href="#">
+                          <form>
+                            <input type="checkbox">
+                          </form>
+                          Sub-opción 1.1
+                        </a>
+                        <a href="#">
+                          <form>
+                            <input type="checkbox">
+                          </form>
+                          Sub-opción 1.1
+                        </a>
+                        <a href="#">
+                          <form>
+                            <input type="checkbox">
+                          </form>
+                          Sub-opción 1.1
+                        </a>
+                      </div>
+                    </div>
+                </div>
+
+                <div class="flex">
+                    <div class="counter">
+                        <button>-</button>
+                        <div>0</div>
+                        <button>+</button>
+                    </div>
+                    <div>
+                        <button class="boton1">Agregar al carrito</button>
+                    </div>
+                </div>
+
+                <div>
+                    <p style="width: 75%;">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Modi ducimus distinctio accusamus fugit? Quae, illum.</p>
+                    <div class="sidenav">
+                        <button class="dropdown-btn">
+                          <i class="fas fa-chevron-down"></i>
+                          Marca
+                        </button>
+                        <div class="dropdown-container">
+                          <a href="#">
+                            <form>
+                              <input type="checkbox">
+                            </form>
+                            Sub-opción 1.1
+                          </a>
+                          <a href="#">
+                            <form>
+                              <input type="checkbox">
+                            </form>
+                            Sub-opción 1.1
+                          </a>
+                          <a href="#">
+                            <form>
+                              <input type="checkbox">
+                            </form>
+                            Sub-opción 1.1
+                          </a>
+                        </div>
+                        <button class="dropdown-btn">
+                          <i class="fas fa-chevron-down"></i>
+                          Precio
+                        </button>
+                        <div class="dropdown-container">
+                          <a href="#">
+                            <form>
+                              <input type="checkbox">
+                            </form>
+                            Sub-opción 1.1
+                          </a>
+                          <a href="#">
+                            <form>
+                              <input type="checkbox">
+                            </form>
+                            Sub-opción 1.1
+                          </a>
+                          <a href="#">
+                            <form>
+                              <input type="checkbox">
+                            </form>
+                            Sub-opción 1.1
+                          </a>
+                        </div>
+                        <div style="border-bottom: 0.5px solid #ccc;" >
+                          <button class="dropdown-btn">
+                            <i class="fas fa-chevron-down"></i>
+                            Talle
+                          </button>
+                          <div class="dropdown-container">
+                            <a href="#">
+                              <form>
+                                <input type="checkbox">
+                              </form>
+                              Sub-opción 1.1
+                            </a>
+                            <a href="#">
+                              <form>
+                                <input type="checkbox">
+                              </form>
+                              Sub-opción 1.1
+                            </a>
+                            <a href="#">
+                              <form>
+                                <input type="checkbox">
+                              </form>
+                              Sub-opción 1.1
+                            </a>
+                          </div>
                         </div>
                     </div>
                 </div>
             </div>
-
-            <aside class="related">
-                <div class="_cont">
-                    <h2>Looks perfectos para vos</h2>
-                    <div class="collection-list cols-4" id="collection-list" data-products-per-page="4">
-                        <a class="product-box">
-                            <span class="img">
-                                <span style="background-image: url('#')" class="i first"></span>
-                                <span class="i second" style="background-image: url('#')"></span>
-                            </span>
-                            <span class="text">
-                                <strong>Mini Dress Azul</strong>
-                                <span>
-                                    $ 10.550,00
-                                </span>
-                            </span>
-                        </a>
-                        <a class="product-box">
-                            <span class="img">
-                                <span style="background-image: url('#')" class="i first"></span>
-                                <span class="i second" style="background-image: url('#')"></span>
-                            </span>
-                            <span class="text">
-                                <strong>Campera Denim Oversized </strong>
-                                <span>
-                                    $ 18.300,00
-                                </span>
-                            </span>
-                        </a>
-                        <a href="#" class="product-box">
-                            <span class="img">
-                                <span style="background-image: url('#')" class="i first"></span>
-                                <span class="i second" style="background-image: url('#')"></span>
-                            </span>
-                            <span class="text">
-                                <strong>Jean Denim Wide Leg</strong>
-                                <span>
-                                    $ 12.500,00
-                                </span>
-                            </span>
-                        </a>
-                        <a class="product-box">
-                            <span class="img">
-                                <span style="background-image: url('#')" class="i first"></span>
-                                <span class="i second" style="background-image: url('#')"></span>
-                            </span>
-                            <span class="text">
-                                <strong>Sweater de Lana Crudo</strong>
-                                <span>
-                                    $ 8.600,00
-                                </span>
-                            </span>
-                        </a>
-                        <a class="product-box hidden">
-                            <span class="img">
-                                <span style="background-image: url('#')" class="i first"></span>
-                                <span class="i second" style="background-image: url('#')"></span>
-                            </span>
-                            <span class="text">
-                                <strong>Top Oliva</strong>
-                                <span>
-                                    $ 5.160,00
-                                </span>
-                            </span>
-                        </a>
-                        <a class="product-box hidden">
-                            <span class="img">
-                                <span style="background-image: url('#')" class="i first"></span>
-                                <span class="i second" style="background-image: url('#')"></span>
-                            </span>
-                            <span class="text">
-                                <strong>Campera Oversized Negra</strong>
-                                <span>
-                                    $ 25.180,00
-                                </span>
-                            </span>
-                        </a>
-                        <div class="more-products" id="more-products-wrap">
-                            <span id="more-products" data-rows_per_page="1">More products</span>
-                        </div>
-                    </div>
-                </div>
-            </aside>
         </section>
 
-        <div id="quick-cart" quickbeam="cart">
-            <a id="quick-cart-pay" quickbeam="cart-pay" class="cart-ico">
-                <span>
-                    <strong class="quick-cart-text">Pay<br></strong>
-                    <span id="quick-cart-price">0</span>
-                    <span id="quick-cart-pay-total-count">0</span>
-                </span>
-            </a>
-        </div>
-
+        <section class="recomendaciones">
+            <div class="recomendaciones-content">
+                <h2>Looks perfectos para vos</h2>
+                <div>
+                    <a href="#">
+                        <img src="#" alt="foto decorativa">
+                        <div>
+                            <p>Campera Denim Oversized </p>
+                            <b>
+                                $ 18.300,00
+                            </b>
+                        </div>
+                    </a>
+                    <a href="#">
+                        <img src="#" alt="foto decorativa">
+                        <div>
+                            <p>Campera Denim Oversized </p>
+                            <b>
+                                $ 18.300,00
+                            </b>
+                        </div>
+                    </a>
+                    <a href="#">
+                        <img src="#" alt="foto decorativa">
+                        <div>
+                            <p>Campera Denim Oversized </p>
+                            <b>
+                                $ 18.300,00
+                            </b>
+                        </div>
+                    </a>
+                    <a href="#">
+                        <img class="imagen-prod-recomendado" src="#" alt="foto decorativa">
+                        <div>
+                            <p>Campera Denim Oversized </p>
+                            <b>
+                                $ 18.300,00
+                            </b>
+                        </div>
+                    </a>
+                </div>
+        </section>
     </main>
+
+    <footer>
+        <section class="footer-section">
+          <div class="info-principal">
+              <img class="logotipo-footer" src="./img/LogoRosa.png" alt="logotipo">
+              <p>Circulando tu placard, ayudás a que el mundo sea un lugar más sostenible.</p>
+              <h3>Suscribite a nuestro Newsletter</h3>
+              <div class="container-footer">
+                  <div class="newsletter">
+                      <input class="email1" type="email" name="email" placeholder="Correo Electrónico" required>
+                      <input class="registro1" type="submit" value="REGISTRARME">
+                  </div>
+              </div>
+              <div class="redes-sociales">
+                  <a href=""><img src="./img/instagram.svg" alt="instagram"></a>
+                  <a href=""><img src="./img/facebook.svg" alt="whatsapp"></a>
+                  <a href=""><img src="./img/facebook.svg" alt="mail"></a>
+              </div>
+          </div>
+    
+          <div class="submenus">
+              <div class="nosotros-submenus">
+                <h4>Nosotros</h4>
+                <ul>
+                  <li><a href="">Sobre Recirculá</a></li>
+                  <li><a href="">Contacto</a></li>
+                  <li><a href="">Locales</a></li>
+                  <li><a href="">Como recircular</a></li>
+                </ul>
+              </div>
+              <div class="consulta-submenus">
+                <h4>Consultá</h4>
+                <ul>
+                  <li><a href="">Preguntas Frecuentes</a></li>
+                  <li><a href="">Envíos y Retiros</a></li>
+                  <li><a href="">Cambios y Devoluciones</a></li>
+                  <li><a href="">Términos y Condiciones</a></li>
+                </ul>
+              <div>
+          <div>
+          <div class="info-inferior">   
+              <hr>
+              <p>©2023 Recirculá. Todos los derechos reservados</p>
+          </div>
+        </section>
+    </footer>
+
+    <script>
+        /* Hacemos que el botón de desplegable pueda abrir y cerrar el menú cuando se haga clic en él */
+        var dropdown = document.getElementsByClassName("dropdown-btn");
+        var i;
+    
+        for (i = 0; i < dropdown.length; i++) {
+          dropdown[i].addEventListener("click", function() {
+            this.classList.toggle("active");
+            var dropdownContent = this.nextElementSibling;
+            if (dropdownContent.style.display === "block") {
+              dropdownContent.style.display = "none";
+            } else {
+              dropdownContent.style.display = "block";
+            }
+          });
+        }
+      </script>
 </body>
 </html>

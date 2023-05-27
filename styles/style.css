@@ -13,6 +13,11 @@ body {
     padding: 0px;
 }
 
+.flex{
+    display: flex;
+    flex-direction: row;
+}
+
 /*MENÚ*/
 
 header {
@@ -1405,6 +1410,119 @@ margin-top: 25px;
     display: none;
 }
 
+/* PRODUCTO */
+
+.producto-general{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.counter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    gap: 10px;
+    border: 2px solid #0A3E27;
+    border-radius: 35px;
+    height: 35px;
+}
+
+.counter div {
+    width: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.counter button {
+    width: 35px;
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+
+.imagenes-producto{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: ;
+    height: 500px;
+    width: 65%;
+}
+
+.image-preview {
+    margin-right: 20px;
+    display: flex;
+    flex-direction: column;
+    height: 90%;
+}
+
+.preview {
+    margin-bottom: 20px;
+    opacity: 0.5;
+    transition: opacity 0.3s ease;
+    border-radius: 20px 0 0 20px;
+}
+
+.preview:hover {
+    opacity: 1;
+}
+
+.main-image {
+    border-radius: 0 50px 50px 50px;
+    overflow: hidden;
+    height: 90%;
+}
+
+.imagen-producto {
+    width: 100%;
+    height: 100%;
+}
+
+.info-producto{
+    width: 35%;
+    padding-top: 50px;
+}
+
+.info-producto .sidenav{
+    width: 100%;
+    padding-right: 20.5px;
+}
+
+.recomendaciones{
+    padding: 35px;
+}
+
+.recomendaciones-content div{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.recomendaciones-content div a{
+    text-decoration: none;
+    color: inherit;
+}
+
+.recomendaciones-content div a div{
+    display: flex;
+    flex-direction: column;
+}
+
+.recomendaciones-content div a div p{
+    margin: 0;
+}
+
+.imagen-prod-recomendado{
+    height: 300px;
+    border-radius: 20px 20px 0 20px;
+    overflow: hidden;
+}
+
 @media (min-width: 768px) and (max-width: 1024px) {
     /*  estilos para tablets */
     .main-shop {
@@ -1444,6 +1562,10 @@ margin-top: 25px;
         width: 94%;
         margin: 0;
     }
+
+    .imagenes-producto{
+        padding-right: 35px;
+    }
 }
 
 @media (max-width: 767px) {
@@ -1482,5 +1604,18 @@ margin-top: 25px;
         text-align: left;
         width: 94%;
         margin: 0;
+    }
+
+    .producto-general{
+        flex-direction: column;
+    }
+
+    .imagenes-producto{
+        width: 100%;
+    }
+
+    .info-producto{
+        width: 100%;
+        padding-top: 55px;
     }
 }
