@@ -5,66 +5,77 @@
 	<meta charset="UTF-8">
   	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css">
-    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="./styles/home.css">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-    <link rel="shortcut icon" href="/Multi01-main\Multi01-main\Multi01-main\img\favicon.ico">
+    <link rel="shortcut icon" href="./img/favicon.ico">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 </head>
 
 <body>
 	<header>
-		<nav id="menu"></nav>    
+		<nav id="menu"></nav>
             <div class="logotipo-navegacion">
                 <img src="./img/LogoRosa.png" alt="Logotipo de Recirculá">
             </div>
-
 		    <div class="items-centrales">
                 <ul>
-			      <li><a href="#us">SHOP</a></li>
-			      <li><a href="#benefits">RE-CLUB</a></li>
-                  <li><a href="#colection">NOSOTROS</a></li>
+		            <li><a href="#us">SHOP</a></li>
+		    	    <li><a href="#benefits">RE-CLUB</a></li>
+                    <li><a href="#colection">NOSOTROS</a></li>
                 </ul>
             </div>
-
             <div class="items-usuario">
                 <div class="perfil">
-                    <a href="#perfil"> <img src="/Multi01-main\Multi01-main\Multi01-main\img\user-outline.svg" alt="usuario"></a>
-                </div>
-                
+                    <a href="#perfil"> <img src="./img/user-outline.svg" alt="usuario"></a>
+                </div>  
                 <div class="carrito">
-                    <a href="#carrito"> <img src="/Multi01-main\Multi01-main\Multi01-main\img\user-relleno.svg" alt="carrito"></a> 
+                    <a href="#carrito"> <img src="./img/user-relleno.svg" alt="carrito"></a> 
                 </div>
             </div>
 		</nav>
 	</header>
 
-    <main>
-        <div class="carrousel">
-            <div class="banner1">
-                <h1></h1>
-                <h2>Recirculá <br>
-                    tu placard</h2>
-                <p>Cambiamos tu ropa en buen estado por las prendas que más te gustan</p>
-                <a href=""><button class="boton1">CONTACTANOS</button></a>
-                <img src="" alt="imagen banner 1">
+    <main class="main-cont">
+        <div class="options">
+            <div class="option active">
+                <div class="option-open">
+                    <h2>Recirculá tu placard</h2>
+                    <p>Cambiamos tu ropa en buen estado por las prendas que más te gustan</p>
+                    <button class="boton2">CONTACTANOS</button>
+                </div>
+                <div class="label">
+                    <p class="texto-vertical">CONTENIDO</p>
+                    <div class="icon">
+                        <i class="fas fa-walking"></i>
+                    </div>
+                </div>
             </div>
-
-            <div class="banner2">
-                <h1>Vintage PRO</h1>
-                <h2>Unite a <br>
-                Vintage PRO</h2>
-                <p>Y descubrí todos los artículos originales de las mejores marcas extranjeras</p>
-                <a href=""><button class="boton1">SUSCRIBETE</button></a>
-                <img src="" alt="imagen banner 2">      
+            <div class="option">
+                <div class="option-open">
+                    <h2>Recirculá tu placard</h2>
+                    <p>Cambiamos tu ropa en buen estado por las prendas que más te gustan</p>
+                    <button class="boton2">CONTACTANOS</button>
+                </div>
+               <div class="label">
+                    <p class="texto-vertical">CONTENIDO</p>
+                    <div class="icon">
+                       <i class="fas fa-snowflake"></i>
+                    </div>
+               </div>
             </div>
-
-            <div class="banner3">
-                <h1>RE-Precios</h1>
-                <h2>Disfrutá los <br>
-                RE-Precios</h2>
-                <p>Hay +500 ítems nuevos todos los meses</p>
-                <a href=""><button class="boton1">SHOP ALL</button></a>
-                <img src="" alt="imagen banner 3">
+            <div class="option">
+                <div class="option-open">
+                    <h2>Recirculá tu placard</h2>
+                    <p>Cambiamos tu ropa en buen estado por las prendas que más te gustan</p>
+                    <button class="boton2">CONTACTANOS</button>
+                </div>
+                <div class="label">
+                    <p class="texto-vertical">CONTENIDO</p>
+                    <div class="icon">
+                       <i class="fas fa-tree"></i>
+                    </div>
+                </div>
             </div>
         </div>
 
@@ -180,7 +191,6 @@
                     <a href=""><img src="/Multi01-main\Multi01-main\Multi01-main\img\facebook.svg" alt="whatsapp"></a>
                     <a href=""><img src="/Multi01-main\Multi01-main\Multi01-main\img\facebook.svg" alt="mail"></a>
                 </div>
-                
             </div>
 
         <div class="submenus">
@@ -212,5 +222,14 @@
 
        </section>
     </footer>
+
+    <script>
+        $(".option").click(
+            function(){
+                $(".option").removeClass("active");
+                $(this).addClass("active");
+            }
+        );
+    </script>
 </body>
 </html>
