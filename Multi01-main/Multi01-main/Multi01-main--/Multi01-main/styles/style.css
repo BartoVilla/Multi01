@@ -760,8 +760,6 @@ margin-top: 25px;
 .main-shop {
     display: flex;
     flex-direction: row;
-    align-items: center;
-    justify-content: center;
     padding: 20px;
     width: 100%;
 }
@@ -769,14 +767,30 @@ margin-top: 25px;
 .intro-shop {
     display: flex;
     flex-direction: column;
-    height: 1550px;
     width: 30%;
+    padding: 1.8% 0 0 1%;
 }
 
 .intro-shop span {
     font-size: 1em;
     text-transform: uppercase;
     padding-bottom: 10px;
+}
+
+.boton2{
+    border-radius: 25px;
+    background-color: #0A3E27;
+    padding: 15px 50px;
+    border: none;
+    color: #fff;
+    font-size: 1em;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+.boton2:hover{
+    background-color: #0b3321;
+    cursor: pointer;
 }
 
 .sidenav {
@@ -986,6 +1000,14 @@ margin-top: 25px;
     
 }
 
+@media screen and (min-width: 1700px) {
+    /* Pantallas grandes*/
+    .item-shop{
+        max-width: 85%;
+    }
+}
+
+
 @media (min-width: 768px) and (max-width: 1024px) {
     /*  estilos para tablets */
     .main-shop {
@@ -996,6 +1018,7 @@ margin-top: 25px;
         width: 100%;
         height: 150px;
         flex-direction: column;
+        padding: 0;
     }
 
     .tablet-filtro{
@@ -1005,9 +1028,10 @@ margin-top: 25px;
     }
 
     .products{
-        width: 100%;
+        width: 85%;
         padding: 25px;
         padding-top: 60px;
+        overflow: hidden;
     }
 
     .products div:first-of-type{
@@ -1016,13 +1040,18 @@ margin-top: 25px;
 
     .item-image {
         grid-template-columns: repeat(2, 1fr);
-        gap: 50px;
+        gap: 30px;
         row-gap: 40px;
+        width: 91vw;
+    }
+
+    .item-shop {
+        width: 91%;
     }
 
     .item-shop hr {
         text-align: left;
-        width: 94%;
+        width: 90%;
         margin: 0;
     }
 
@@ -1042,10 +1071,18 @@ margin-top: 25px;
         height: 150px;
     }
 
+    .intro-shop .sidenav{
+        width: 94%;
+    }
+
     .products{
-        width: 100%;
+        width: 89%;
         padding: 25px;
         padding-top: 45px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
     }
 
     .products div:first-of-type{
@@ -1061,11 +1098,12 @@ margin-top: 25px;
     .item-image {
         grid-template-columns: repeat(1, 1fr);
         row-gap: 40px;
+        width: 75%;
+        padding-bottom: 20px;
     }
 
     .item-shop hr {
         text-align: left;
-        width: 94%;
         margin: 0;
     }
 
